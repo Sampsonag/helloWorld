@@ -1,6 +1,7 @@
 package headFirstDesignPattern;
 
 import duckBehaviors.FlyWithWings;
+import duckBehaviors.MuteQuack;
 import duckBehaviors.Quack;
 
 // what is /. in java
