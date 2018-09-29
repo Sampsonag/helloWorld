@@ -1,9 +1,12 @@
 package mooc;
 
-public class Methods14 {
+public class EXMethods14 {
 	
 	 public static void main(String[] args) {
-
+		 
+		 //hey Aaron its me variable visibility here to discuss when you can and can't see me(cue John Cena), You got to pass variables around with arguments Morty arguements (burp)
+		 // and if you want to return info you need that return type, methods are balck boxes aaron, theydo things but without arguments passed in here() or return statements they remain black... boxes
+		 // great reminder variables passed to methods are just copies!!!!
 		 int number = 1;
 		 System.out.println("Main program variable: " + number);
 		 addThree(number);
