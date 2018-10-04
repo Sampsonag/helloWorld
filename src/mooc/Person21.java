@@ -14,8 +14,8 @@ public class Person21 {
 	 * @param weight
 	 * @param height
 	 */
-	public Person21(String initialName) {//Aaron if the constructor demands input you must provide it
-		super();
+	public Person21(String initialName) {//Aaron if the constructor demands input you must provide it 
+		super(); // we place variables in the constructor if a new object will require them after creation
 		this.name = initialName;
 		this.age = 0;
 		this.weight = 0;

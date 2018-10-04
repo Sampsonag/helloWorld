@@ -6,43 +6,106 @@ public class Main21 {
 	
 	public static void main(String[] args) {
 		
-	   
-    Scanner reader = new Scanner(System.in);
-    BoundedCounter78 seconds = new BoundedCounter78(59);
-    BoundedCounter78 minutes = new BoundedCounter78(59);
-    BoundedCounter78 hours = new BoundedCounter78(23);
+		PasswordRandomizer81 pr = new PasswordRandomizer81(13);
+		
+		
+		System.out.println(pr.createPassword()); 
+		
+	}
+	}
+		
+//Question 80
+//Dice80 dice = new Dice80(6);
+//
+//int i = 0;
+//while ( i < 10 ) {
+//    System.out.println( dice.roll() );
+//    i++;
+//
+//
+//}
+//}
 
-    System.out.print("seconds: ");
-    int s = reader.nextInt();
-    System.out.print("minutes: ");
-    int m =  reader.nextInt();
-    System.out.print("hours: ");
-    int h =  reader.nextInt();// read the initial value of hours from the user
-
-    seconds.setValue(s);
-    minutes.setValue(m);
-    hours.setValue(h);
-
-    int i = 0;
-    while ( i < 600 ) {
-    	seconds.next();
-    	
-    	if(seconds.getValue() == 00) {
-        	minutes.next();
-        }
-        
-        if(minutes.getValue() == 00) {
-        	hours.next();
-        }
-     //   if(hours.getValue() == 23)
-        // advance minutes
-        // if minutes become zero, advance hours
-        	
-        i++;
-        
-        System.out.println( hours + ":" + minutes   + ":" + seconds);
-    }
-}
+		
+//	// Question 79	
+//		 NumberStatistics79 stats = new NumberStatistics79();
+//		 NumberStatistics79 statsEven = new NumberStatistics79();
+//		 NumberStatistics79 statsOdd = new NumberStatistics79();
+//		 Scanner reader = new Scanner(System.in);
+//		  int input;
+//		 
+//		 
+//			
+//			 
+//		 
+//		 while (true) {
+//			 
+//			 input = reader.nextInt();
+//			 
+//			 if(input == -1) {
+//				 break;
+//			 }else if(input % 2 == 0) {
+//				 
+//				 statsEven.addNumber(input);
+//				 
+//			 }else {
+//				 statsOdd.addNumber(input);
+//				 
+//			 }
+//			 
+//			 
+//			  stats.addNumber(input);
+//			 
+//			 
+//			 
+//		 }
+//		 System.out.println("sum: " + stats.sum());
+//		 System.out.println("sum: " + statsEven.sum());
+//		 System.out.println("sum: " + statsOdd.sum());
+//		 
+//	      
+//	    }
+//	    }
+//		
+//	
+//		
+//	 // question 78  
+//    Scanner reader = new Scanner(System.in);
+//    BoundedCounter78 seconds = new BoundedCounter78(59);
+//    BoundedCounter78 minutes = new BoundedCounter78(59);
+//    BoundedCounter78 hours = new BoundedCounter78(23);
+//
+//    System.out.print("seconds: ");
+//    int s = reader.nextInt();
+//    System.out.print("minutes: ");
+//    int m =  reader.nextInt();
+//    System.out.print("hours: ");
+//    int h =  reader.nextInt();// read the initial value of hours from the user
+//
+//    seconds.setValue(s);
+//    minutes.setValue(m);
+//    hours.setValue(h);
+//
+//    int i = 0;
+//    while ( i < 600 ) {
+//    	seconds.next();
+//    	
+//    	if(seconds.getValue() == 00) {
+//        	minutes.next();
+//        }
+//        
+//        if(minutes.getValue() == 00) {
+//        	hours.next();
+//        }
+//     //   if(hours.getValue() == 23)
+//        // advance minutes
+//        // if minutes become zero, advance hours
+//        	
+//        i++;
+//        
+//        System.out.println( hours + ":" + minutes   + ":" + seconds);
+//    }
+//}
 		
 		
 		/*
@@ -148,4 +211,4 @@ public class Main21 {
        
 	
 	
-}
+//}
