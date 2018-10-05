@@ -14,12 +14,35 @@ public class Person21 {
 	 * @param weight
 	 * @param height
 	 */
+    
+	public Person21() {
+		this("name",0,0,0); // call the constructor below iitalized as called
+		
+	}
+    
+    
 	public Person21(String initialName) {//Aaron if the constructor demands input you must provide it 
 		super(); // we place variables in the constructor if a new object will require them after creation
 		this.name = initialName;
 		this.age = 0;
 		this.weight = 0;
 		this.height = 0;
+	}
+	
+	public Person21(String initialName, int age) {
+		super();
+		this.name = initialName;
+		this.age = age;
+		this.weight = 0;
+		this.height = 0;
+	}
+	
+	public Person21(String initialName, int age, int weight, int height) {
+		super();
+		this.name = initialName;
+		this.age = age;
+		this.weight = weight;
+		this.height = height;
 	}
 
 	public void printPerson() {
@@ -29,6 +52,10 @@ public class Person21 {
 	 
 	 public void becomeOlder() {
 	        this.age = this.age + 1;
+	    }
+	 
+	 public void becomeOlder(int years) {
+	        this.age = this.age + years ;
 	    }
 	 
 	   public boolean isAdult(){
@@ -51,8 +78,22 @@ public class Person21 {
 	        this.height = newHeight;
 	    }
 
+	    public int getHeight() {
+	        return this.height;
+	    }
+	    
 	    public void setWeight(int newWeight) {
 	        this.weight = newWeight;
+	    }
+	    
+	    public int getWeight() {
+	        return this.weight;
+	    }
+	    
+	    public double weightIndex() {
+	        double heightInMeters = this.height / 100.0;
+
+	        return this.weight / (heightInMeters * heightInMeters);
 	    }
 
 	    public double bodyMassIndex(){
@@ -60,7 +101,13 @@ public class Person21 {
 	        return this.weight / ( heightDividedByHundred * heightDividedByHundred );
 	    }
 
-	   
+	    public boolean olderThan(Person21 compared) {
+	        if ( this.age > compared.age ) {
+	            return true;
+	        }
+
+	        return false;
+	    }
 	   
 
 }
