@@ -10,7 +10,7 @@ public class Main21 {
 		 ArrayList<Person21> teachers = new ArrayList<Person21>();
 		 
 		 
-		 new Person21("tom");
+		 new Person21("tom");// new object created with no name and type
 						 
 		//ArrayList<String> example = new ArrayList<String>();
 		

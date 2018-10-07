@@ -1,4 +1,4 @@
-package mooc;
+package mooc90;
 
 public class BoundedCounter78 {
 	   private int value;
@@ -15,7 +15,7 @@ public class BoundedCounter78 {
 	    public void next() {
 	        // write code here
 	    	
-	    	this.value++;
+	    	value++;
 	    	
 	    	if (this.value > this.upperLimit) {
 	    		this.value = 0;
@@ -38,8 +38,6 @@ public class BoundedCounter78 {
 	    }
 	    
 	    public void setValue(int value) {
-	    	 if (value > 0 && value <= this.upperLimit) {
-	             this.value = value;
-	         }
+	        this.value = value;
 	    }
 }
